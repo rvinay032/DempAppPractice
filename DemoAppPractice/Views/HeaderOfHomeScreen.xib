@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderOfHomeScreen" customModule="DemoAppPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_header_bg_" translatesAutoresizingMaskIntoConstraints="NO" id="5Ko-cE-vFn">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhN-dY-Hhc">
+                    <rect key="frame" x="15" y="16" width="24" height="24"/>
+                    <state key="normal" backgroundImage="icHomeMenu"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCi-6Y-7GH">
+                    <rect key="frame" x="378" y="19" width="24" height="24"/>
+                    <state key="normal" image="icHomeBuying"/>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cm1-5K-cal">
+                    <rect key="frame" x="112" y="128" width="190" height="17"/>
+                    <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icHomeSearch" translatesAutoresizingMaskIntoConstraints="NO" id="1T0-gP-aHY">
+                    <rect key="frame" x="199.66666666666666" y="124.66666666666666" width="15" height="14.999999999999972"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="lwv-In-do8"/>
+                        <constraint firstAttribute="height" constant="15" id="n6X-yH-zlH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you looking for?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlU-fA-V9a">
+                    <rect key="frame" x="109" y="74.666666666666671" width="196" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNO-Bu-iqT" userLabel="lineView">
+                    <rect key="frame" x="87" y="153" width="240" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5Ko-cE-vFn" secondAttribute="trailing" id="3bl-6k-x0F"/>
+                <constraint firstItem="1T0-gP-aHY" firstAttribute="centerY" secondItem="cm1-5K-cal" secondAttribute="centerY" constant="-4.5" id="8J9-Vj-YKo"/>
+                <constraint firstItem="JhN-dY-Hhc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Cll-nI-kQH"/>
+                <constraint firstAttribute="trailing" secondItem="cm1-5K-cal" secondAttribute="trailing" constant="112" id="Hiw-cJ-8G2"/>
+                <constraint firstItem="PlU-fA-V9a" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="I4O-Ei-v8J"/>
+                <constraint firstItem="PlU-fA-V9a" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JMM-CV-O8p"/>
+                <constraint firstAttribute="bottom" secondItem="5Ko-cE-vFn" secondAttribute="bottom" id="MIb-z2-qia"/>
+                <constraint firstAttribute="bottom" secondItem="CNO-Bu-iqT" secondAttribute="bottom" constant="16" id="N7b-y9-spf"/>
+                <constraint firstAttribute="trailing" secondItem="dCi-6Y-7GH" secondAttribute="trailing" constant="12" id="P8I-73-woT"/>
+                <constraint firstAttribute="bottom" secondItem="cm1-5K-cal" secondAttribute="bottom" constant="25" id="TbM-tU-2j6"/>
+                <constraint firstAttribute="trailing" secondItem="CNO-Bu-iqT" secondAttribute="trailing" constant="87" id="Xrv-kS-hbu"/>
+                <constraint firstItem="cm1-5K-cal" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="112" id="Y8h-RA-q5l"/>
+                <constraint firstItem="CNO-Bu-iqT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="87" id="YNW-2z-TTz"/>
+                <constraint firstItem="5Ko-cE-vFn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="a6p-qj-8HG"/>
+                <constraint firstItem="5Ko-cE-vFn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hmH-WM-dXD"/>
+                <constraint firstItem="1T0-gP-aHY" firstAttribute="centerX" secondItem="cm1-5K-cal" secondAttribute="centerX" id="moQ-IM-3fW"/>
+                <constraint firstItem="dCi-6Y-7GH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="tAR-oG-eTk"/>
+                <constraint firstItem="JhN-dY-Hhc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="uCG-ho-tYQ"/>
+                <constraint firstItem="CNO-Bu-iqT" firstAttribute="top" secondItem="cm1-5K-cal" secondAttribute="bottom" constant="8" id="xWH-J8-xuD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-527" y="-558"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icHomeBuying" width="24" height="24"/>
+        <image name="icHomeMenu" width="24" height="24"/>
+        <image name="icHomeSearch" width="26" height="26"/>
+        <image name="ic_home_header_bg_" width="414" height="220"/>
+    </resources>
+</document>
