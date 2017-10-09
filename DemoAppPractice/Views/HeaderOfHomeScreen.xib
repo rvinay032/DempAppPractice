@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,11 +17,14 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_header_bg_" translatesAutoresizingMaskIntoConstraints="NO" id="5Ko-cE-vFn">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhN-dY-Hhc">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhN-dY-Hhc" userLabel="SidePanel">
                     <rect key="frame" x="15" y="16" width="24" height="24"/>
                     <state key="normal" backgroundImage="icHomeMenu"/>
+                    <connections>
+                        <action selector="sideMenuBtnTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="ucM-zB-dJv"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCi-6Y-7GH">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCi-6Y-7GH" userLabel="CartBtn">
                     <rect key="frame" x="378" y="19" width="24" height="24"/>
                     <state key="normal" image="icHomeBuying"/>
                 </button>
@@ -32,14 +35,14 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icHomeSearch" translatesAutoresizingMaskIntoConstraints="NO" id="1T0-gP-aHY">
-                    <rect key="frame" x="199.66666666666666" y="124.66666666666666" width="15" height="14.999999999999972"/>
+                    <rect key="frame" x="199.5" y="124.5" width="15" height="15"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="15" id="lwv-In-do8"/>
                         <constraint firstAttribute="height" constant="15" id="n6X-yH-zlH"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you looking for?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PlU-fA-V9a">
-                    <rect key="frame" x="109" y="74.666666666666671" width="196" height="21"/>
+                    <rect key="frame" x="109" y="74.5" width="196" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
@@ -72,13 +75,13 @@
                 <constraint firstItem="CNO-Bu-iqT" firstAttribute="top" secondItem="cm1-5K-cal" secondAttribute="bottom" constant="8" id="xWH-J8-xuD"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="-527" y="-558"/>
+            <point key="canvasLocation" x="-177" y="-558"/>
         </view>
     </objects>
     <resources>
         <image name="icHomeBuying" width="24" height="24"/>
         <image name="icHomeMenu" width="24" height="24"/>
         <image name="icHomeSearch" width="26" height="26"/>
-        <image name="ic_home_header_bg_" width="414" height="220"/>
+        <image name="ic_home_header_bg_" width="320" height="170"/>
     </resources>
 </document>

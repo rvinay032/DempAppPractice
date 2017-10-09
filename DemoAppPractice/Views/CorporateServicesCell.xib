@@ -17,9 +17,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="266.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="art-ao-KnV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="267"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corporate Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEL-Ne-Juz">
-                        <rect key="frame" x="123.5" y="5" width="167" height="21.5"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <rect key="frame" x="125.5" y="5" width="163" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -50,16 +54,21 @@
             <constraints>
                 <constraint firstItem="PCE-uo-8hI" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="3" id="C0c-pZ-YIJ"/>
                 <constraint firstAttribute="trailing" secondItem="C0h-XF-yPq" secondAttribute="trailing" constant="133" id="Kl6-or-GYK"/>
+                <constraint firstItem="art-ao-KnV" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="N81-tQ-hzc"/>
                 <constraint firstItem="UEL-Ne-Juz" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="5" id="bdH-LZ-3xX"/>
+                <constraint firstAttribute="bottom" secondItem="art-ao-KnV" secondAttribute="bottom" id="d4h-gM-Rhw"/>
                 <constraint firstAttribute="bottom" secondItem="C0h-XF-yPq" secondAttribute="bottom" constant="10" id="hcj-ID-BP4"/>
+                <constraint firstItem="art-ao-KnV" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="kje-Mp-JwZ"/>
                 <constraint firstItem="UEL-Ne-Juz" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" id="nQF-Mq-oFW"/>
                 <constraint firstItem="C0h-XF-yPq" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="129" id="oYQ-Li-wgL"/>
+                <constraint firstAttribute="trailing" secondItem="art-ao-KnV" secondAttribute="trailing" id="tpz-A0-1Mh"/>
                 <constraint firstAttribute="trailing" secondItem="PCE-uo-8hI" secondAttribute="trailing" constant="3" id="zm3-5u-Nno"/>
             </constraints>
             <connections>
+                <outlet property="backView" destination="art-ao-KnV" id="s1O-R7-jb7"/>
                 <outlet property="corporateServiceCollectionView" destination="PCE-uo-8hI" id="gkr-yr-35E"/>
             </connections>
-            <point key="canvasLocation" x="-691" y="-40.5"/>
+            <point key="canvasLocation" x="-909" y="-15"/>
         </tableViewCell>
     </objects>
 </document>

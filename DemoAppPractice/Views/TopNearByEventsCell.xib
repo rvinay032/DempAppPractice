@@ -17,14 +17,19 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="449.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kw0-re-0Fx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="450"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Near By Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VuA-gY-tb0">
-                        <rect key="frame" x="119.5" y="8" width="175.5" height="23"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <rect key="frame" x="122.5" y="8" width="169.5" height="40"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="N4v-xz-diT">
-                        <rect key="frame" x="3" y="39" width="408" height="363"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="N4v-xz-diT">
+                        <rect key="frame" x="10" y="60" width="394" height="317.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="47U-cO-MFI">
                             <size key="itemSize" width="50" height="50"/>
@@ -33,9 +38,8 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6y-MA-ppl">
-                        <rect key="frame" x="131" y="402" width="152" height="39"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6y-MA-ppl">
+                        <rect key="frame" x="155" y="381.5" width="104" height="43.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                         <state key="normal" title="+ 2 More &gt;">
                             <color key="titleColor" red="0.25490196079999999" green="0.70588235290000001" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -44,20 +48,25 @@
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
+                    <constraint firstItem="N4v-xz-diT" firstAttribute="top" secondItem="VuA-gY-tb0" secondAttribute="bottom" constant="12" id="Ctw-oD-LVF"/>
                     <constraint firstItem="VuA-gY-tb0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="DYf-Pu-RyD"/>
-                    <constraint firstItem="N4v-xz-diT" firstAttribute="top" secondItem="VuA-gY-tb0" secondAttribute="bottom" constant="8" id="gJs-qW-eNx"/>
+                    <constraint firstItem="e6y-MA-ppl" firstAttribute="top" secondItem="N4v-xz-diT" secondAttribute="bottom" constant="4" id="Jcr-Ey-oik"/>
                     <constraint firstItem="VuA-gY-tb0" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="p1b-QM-Rom"/>
+                    <constraint firstAttribute="bottom" secondItem="N4v-xz-diT" secondAttribute="bottom" constant="72" id="uF3-Hr-jjT"/>
                 </constraints>
             </tableViewCellContentView>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="N4v-xz-diT" secondAttribute="trailing" constant="3" id="g18-oD-t8w"/>
-                <constraint firstAttribute="bottom" secondItem="N4v-xz-diT" secondAttribute="bottom" constant="48" id="htX-Zv-bxu"/>
-                <constraint firstItem="N4v-xz-diT" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="3" id="lwv-nv-3gL"/>
+                <constraint firstItem="e6y-MA-ppl" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" id="A37-U0-e4u"/>
+                <constraint firstItem="N4v-xz-diT" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="60" id="EpG-Lp-4yn"/>
+                <constraint firstAttribute="bottom" secondItem="e6y-MA-ppl" secondAttribute="bottom" constant="25" id="PFT-rj-Os7"/>
+                <constraint firstAttribute="trailing" secondItem="N4v-xz-diT" secondAttribute="trailing" constant="10" id="hab-Bm-pMC"/>
+                <constraint firstItem="N4v-xz-diT" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="10" id="zzj-VE-mK8"/>
             </constraints>
             <connections>
+                <outlet property="backVIew" destination="kw0-re-0Fx" id="8JP-FA-uxJ"/>
                 <outlet property="topNearByEvents" destination="N4v-xz-diT" id="H25-kq-KPj"/>
             </connections>
-            <point key="canvasLocation" x="-520" y="-352"/>
+            <point key="canvasLocation" x="-651" y="-364"/>
         </tableViewCell>
     </objects>
 </document>

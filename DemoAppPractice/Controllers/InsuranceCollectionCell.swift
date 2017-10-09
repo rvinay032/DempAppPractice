@@ -10,10 +10,10 @@ import UIKit
 
 class InsuranceCollectionCell: UICollectionViewCell {
 
+    // MARK:- Outlets..................
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
+    @IBOutlet weak var insuranceImage: UIImageView!
+    
+    @IBOutlet weak var insuranceLabel: UILabel!
+    
 }

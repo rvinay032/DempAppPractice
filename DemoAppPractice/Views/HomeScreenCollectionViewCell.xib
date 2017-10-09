@@ -19,14 +19,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icHomeInsurance" translatesAutoresizingMaskIntoConstraints="NO" id="y6a-ux-CIs">
-                        <rect key="frame" x="24" y="10" width="52" height="52"/>
+                        <rect key="frame" x="24" y="13" width="52" height="52"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="52" id="97Q-sl-jkq"/>
                             <constraint firstAttribute="width" constant="52" id="n2z-7I-SVJ"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PbG-KU-gew">
-                        <rect key="frame" x="-1.5" y="76" width="104" height="17"/>
+                        <rect key="frame" x="-1.5" y="73" width="104" height="17"/>
                         <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,8 +35,8 @@
             </view>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="PbG-KU-gew" firstAttribute="top" secondItem="y6a-ux-CIs" secondAttribute="bottom" constant="14" id="FSj-i3-Fxr"/>
-                <constraint firstItem="y6a-ux-CIs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="GdI-Ca-hA2"/>
+                <constraint firstItem="PbG-KU-gew" firstAttribute="top" secondItem="y6a-ux-CIs" secondAttribute="bottom" constant="8" id="FSj-i3-Fxr"/>
+                <constraint firstItem="y6a-ux-CIs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="GdI-Ca-hA2"/>
                 <constraint firstItem="y6a-ux-CIs" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="sjA-qc-pZR"/>
                 <constraint firstItem="PbG-KU-gew" firstAttribute="width" secondItem="y6a-ux-CIs" secondAttribute="width" multiplier="2" id="vUY-ci-BJc"/>
                 <constraint firstItem="PbG-KU-gew" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="w1o-ZN-KWn"/>

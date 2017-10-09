@@ -9,14 +9,17 @@
 import UIKit
 
 class HomeScreenCollectionViewCell: UICollectionViewCell {
-
+    
+    // MARK:- Outlets............
     
     @IBOutlet weak var serviceImageView: UIImageView!
     
     @IBOutlet weak var serviceImageLabel: UILabel!
+    
     override func awakeFromNib() {
+        
         super.awakeFromNib()
-        // Initialization code
+        
     }
-
+    
 }

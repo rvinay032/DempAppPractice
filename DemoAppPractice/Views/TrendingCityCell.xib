@@ -17,14 +17,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="404" height="145.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vbn-AQ-DTh">
+                        <rect key="frame" x="0.0" y="0.0" width="404" height="146"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending City Tour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jz-XX-cER">
-                        <rect key="frame" x="116" y="10" width="172" height="24"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <rect key="frame" x="121" y="10" width="162.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Si4-Di-Ghs">
-                        <rect key="frame" x="3" y="40" width="398" height="90"/>
+                        <rect key="frame" x="6" y="44" width="392" height="90"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IVs-de-xkg">
                             <size key="itemSize" width="50" height="50"/>
@@ -33,23 +37,36 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fca-xl-Wqv">
+                        <rect key="frame" x="308" y="4" width="75" height="37"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="currentPageIndicatorTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </pageControl>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="Si4-Di-Ghs" firstAttribute="top" secondItem="6Jz-XX-cER" secondAttribute="bottom" constant="6" id="GXq-W1-gcx"/>
+                    <constraint firstItem="Si4-Di-Ghs" firstAttribute="top" secondItem="6Jz-XX-cER" secondAttribute="bottom" constant="10" id="GXq-W1-gcx"/>
                 </constraints>
             </tableViewCellContentView>
             <constraints>
+                <constraint firstItem="Vbn-AQ-DTh" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="CDB-Yv-htY"/>
                 <constraint firstItem="6Jz-XX-cER" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="10" id="NBF-oF-RII"/>
+                <constraint firstAttribute="trailing" secondItem="Vbn-AQ-DTh" secondAttribute="trailing" id="Tdb-KY-CpV"/>
                 <constraint firstItem="6Jz-XX-cER" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" id="Upy-0G-bX9"/>
-                <constraint firstItem="Si4-Di-Ghs" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="3" id="VwZ-tN-YOc"/>
-                <constraint firstAttribute="trailing" secondItem="Si4-Di-Ghs" secondAttribute="trailing" constant="3" id="Z5O-KW-OBk"/>
-                <constraint firstAttribute="bottom" secondItem="Si4-Di-Ghs" secondAttribute="bottom" constant="16" id="fIv-GO-X6Y"/>
+                <constraint firstItem="Si4-Di-Ghs" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="6" id="VwZ-tN-YOc"/>
+                <constraint firstAttribute="trailing" secondItem="Si4-Di-Ghs" secondAttribute="trailing" constant="6" id="Z5O-KW-OBk"/>
+                <constraint firstAttribute="bottom" secondItem="Vbn-AQ-DTh" secondAttribute="bottom" id="ch6-kj-JZ4"/>
+                <constraint firstItem="Vbn-AQ-DTh" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="dkm-xE-dhj"/>
+                <constraint firstAttribute="bottom" secondItem="Si4-Di-Ghs" secondAttribute="bottom" constant="12" id="fIv-GO-X6Y"/>
             </constraints>
             <connections>
+                <outlet property="backView" destination="Vbn-AQ-DTh" id="xwv-Kc-Saz"/>
+                <outlet property="trendingCityPageController" destination="fca-xl-Wqv" id="KA1-to-0bh"/>
                 <outlet property="trendingCollectionview" destination="Si4-Di-Ghs" id="wZk-8g-XCK"/>
             </connections>
-            <point key="canvasLocation" x="-218" y="-79"/>
+            <point key="canvasLocation" x="-817" y="-169"/>
         </tableViewCell>
     </objects>
 </document>

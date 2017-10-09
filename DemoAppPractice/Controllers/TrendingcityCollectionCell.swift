@@ -9,7 +9,8 @@
 import UIKit
 
 class TrendingcityCollectionCell: UICollectionViewCell {
-
+    
+    // MARK:- Outlets...................
     
     @IBOutlet weak var hotelImagesLabel: UIImageView!
     
@@ -19,9 +20,21 @@ class TrendingcityCollectionCell: UICollectionViewCell {
     
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
+        
+        self.hotelImagesLabel.layer.cornerRadius = 4
+          self.hotelImagesLabel.layer.masksToBounds = true
+        
+        self.hotelImagesLabel.layer.shadowOpacity = 1
+        self.hotelImagesLabel.layer.shadowOffset = CGSize(width: 0, height: 2)
+        self.hotelImagesLabel.layer.shadowRadius = 2.5
+        hotelImagesLabel.layer.shadowColor = UIColor.black.cgColor
+        
+        self.layer.masksToBounds = false
 
+    }
+    
 }

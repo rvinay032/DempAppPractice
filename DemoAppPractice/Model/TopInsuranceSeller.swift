@@ -10,9 +10,7 @@ import Foundation
 
 class TopInsuranceSeller {
     
-   var insuranceImage = ["hotel", "hotel2"]
-    
-    var insuranceTitle = ["Burj Al Arab", "La patite Mastro"]
-    
+    var insuranceImage = ["icHomeTransamerica", "icHomeAxaInsurance", "icHomeAigInsurance"]
+    var insuranceTitle = ["AIG Insurance", "Transamerica", "AXA Insurance"]
     
 }

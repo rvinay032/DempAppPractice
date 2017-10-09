@@ -27,42 +27,46 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                     </collectionView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mu-wE-u4w">
-                        <rect key="frame" x="184" y="144" width="46" height="30"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-7q-0fp" userLabel="LeftView">
+                        <rect key="frame" x="0.0" y="173" width="184.5" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="46" id="2g6-6L-GfI"/>
-                            <constraint firstAttribute="height" constant="30" id="HFj-bd-7Xp"/>
+                            <constraint firstAttribute="height" constant="1" id="Fy7-0Z-4nj"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7M-BK-cZ5">
+                        <rect key="frame" x="229.5" y="173" width="184.5" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="bQY-3N-QAZ"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mu-wE-u4w">
+                        <rect key="frame" x="181.5" y="151" width="52" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="fxZ-9O-E1r"/>
+                            <constraint firstAttribute="width" constant="52" id="gjy-14-U6a"/>
                         </constraints>
                         <state key="normal" backgroundImage="icHomeDropdown"/>
                     </button>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4g2-7q-0fp" userLabel="LeftView">
-                        <rect key="frame" x="0.0" y="156" width="184" height="1"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7M-BK-cZ5">
-                        <rect key="frame" x="230" y="156" width="184" height="1"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
                 </subviews>
                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="d7M-BK-cZ5" firstAttribute="centerY" secondItem="7Mu-wE-u4w" secondAttribute="centerY" constant="-2.5" id="7tV-4F-eGi"/>
-                    <constraint firstItem="4g2-7q-0fp" firstAttribute="centerY" secondItem="7Mu-wE-u4w" secondAttribute="centerY" constant="-2.5" id="Cw2-xJ-sfD"/>
-                    <constraint firstItem="d7M-BK-cZ5" firstAttribute="leading" secondItem="7Mu-wE-u4w" secondAttribute="trailing" id="IYR-QW-KET"/>
-                    <constraint firstItem="7Mu-wE-u4w" firstAttribute="leading" secondItem="4g2-7q-0fp" secondAttribute="trailing" id="ypt-BF-ANm"/>
+                    <constraint firstItem="7Mu-wE-u4w" firstAttribute="top" secondItem="xe2-Nd-ZL9" secondAttribute="bottom" constant="15" id="6YK-9p-lTh"/>
+                    <constraint firstItem="d7M-BK-cZ5" firstAttribute="width" secondItem="4g2-7q-0fp" secondAttribute="width" id="H1Q-8Q-0mZ"/>
+                    <constraint firstItem="d7M-BK-cZ5" firstAttribute="leading" secondItem="7Mu-wE-u4w" secondAttribute="trailing" constant="-4" id="Xgs-s1-PJl"/>
+                    <constraint firstItem="7Mu-wE-u4w" firstAttribute="leading" secondItem="4g2-7q-0fp" secondAttribute="trailing" constant="-3" id="nXK-hF-NtN"/>
+                    <constraint firstItem="4g2-7q-0fp" firstAttribute="centerY" secondItem="7Mu-wE-u4w" secondAttribute="centerY" id="r6n-Pu-H9Z"/>
+                    <constraint firstItem="d7M-BK-cZ5" firstAttribute="centerY" secondItem="7Mu-wE-u4w" secondAttribute="centerY" id="ubd-PF-8NG"/>
                 </constraints>
             </tableViewCellContentView>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="xe2-Nd-ZL9" secondAttribute="bottom" constant="64" id="0Uf-Zn-pAQ"/>
-                <constraint firstAttribute="bottom" secondItem="7Mu-wE-u4w" secondAttribute="bottom" constant="26" id="298-qg-ChF"/>
-                <constraint firstItem="7Mu-wE-u4w" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" id="9fm-OR-TKX"/>
-                <constraint firstAttribute="trailing" secondItem="d7M-BK-cZ5" secondAttribute="trailing" id="AaQ-Kq-qDN"/>
-                <constraint firstAttribute="bottom" secondItem="d7M-BK-cZ5" secondAttribute="bottom" constant="43" id="LxX-fI-uve"/>
-                <constraint firstAttribute="bottom" secondItem="4g2-7q-0fp" secondAttribute="bottom" constant="43" id="Up2-Qp-dDD"/>
-                <constraint firstItem="xe2-Nd-ZL9" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="3" id="eif-V1-KkN"/>
-                <constraint firstAttribute="trailing" secondItem="xe2-Nd-ZL9" secondAttribute="trailing" constant="3" id="mof-EJ-MSL"/>
-                <constraint firstItem="xe2-Nd-ZL9" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="n7P-Sn-FoC"/>
-                <constraint firstItem="4g2-7q-0fp" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="z6I-nX-PIU"/>
+                <constraint firstAttribute="bottom" secondItem="xe2-Nd-ZL9" secondAttribute="bottom" constant="64" id="9a7-Hf-Yui"/>
+                <constraint firstItem="xe2-Nd-ZL9" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="GB3-0L-TjL"/>
+                <constraint firstItem="4g2-7q-0fp" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="JLL-0Q-7X7"/>
+                <constraint firstItem="xe2-Nd-ZL9" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="3" id="Vxj-bN-OoZ"/>
+                <constraint firstAttribute="trailing" secondItem="xe2-Nd-ZL9" secondAttribute="trailing" constant="3" id="Ydz-Sd-OWZ"/>
+                <constraint firstItem="7Mu-wE-u4w" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" id="tXs-d0-9fl"/>
             </constraints>
             <connections>
                 <outlet property="collectionViewHomeScreen" destination="xe2-Nd-ZL9" id="0BH-jX-ZQL"/>
@@ -70,7 +74,7 @@
                 <outlet property="leftView" destination="4g2-7q-0fp" id="wDk-9K-p4O"/>
                 <outlet property="rightView" destination="d7M-BK-cZ5" id="TPm-Uk-Mp8"/>
             </connections>
-            <point key="canvasLocation" x="-1473" y="-556"/>
+            <point key="canvasLocation" x="-1553" y="-570"/>
         </tableViewCell>
     </objects>
     <resources>

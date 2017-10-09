@@ -11,7 +11,7 @@ import Foundation
 class TrendingCityTour {
     
     var hotelImages = ["hotel", "hotel2", "hotel3", "hotel4"]
-    var hotelNames = ["BurjKhalifa", "Al-Baghdi", "Al-Ut-Khafiyat", "PalaceMafia"]
+    var hotelNames = ["Hotel Burj Al Arab", "Al-Baghdi", "Al-Ut-Khafiyat", "PalaceMafia"]
     var priceRanges = ["Starting from $200", "Starting from $350", "Starting from $270", "Starting from $800"]
     var timeLeft = ["05 Days left", "21 Days left", "10 Days left", "25 Days left"]
     

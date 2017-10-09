@@ -15,5 +15,4 @@ class TopNearbyEvents {
     var passes = ["15 passes available", "20 passes available", "8 passes available", "6 passes available"]
     var package = ["At $50 for 2", "At $150 for 2", "At $80 for 2", "At $60 for 2"]
     
-    
 }

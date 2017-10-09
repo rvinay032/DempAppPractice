@@ -18,23 +18,23 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotel" translatesAutoresizingMaskIntoConstraints="NO" id="Qge-3r-REx">
-                        <rect key="frame" x="0.0" y="0.0" width="359" height="181"/>
+                        <rect key="frame" x="0.0" y="0.0" width="359" height="176"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="753" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZT-zt-K0g">
-                        <rect key="frame" x="5" y="217" width="42" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="3" y="206.5" width="33" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" red="1" green="0.0" blue="0.0" alpha="0.75093642979452058" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZm-pj-Wfn">
-                        <rect key="frame" x="2" y="242.5" width="39" height="19.5"/>
-                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                        <rect key="frame" x="2" y="227.5" width="28.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="749" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWJ-IM-DLi">
-                        <rect key="frame" x="2" y="191" width="50.5" height="24"/>
-                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                        <rect key="frame" x="2" y="184" width="43" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -42,15 +42,15 @@
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="pZT-zt-K0g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="4cZ-rO-ZMo"/>
+                <constraint firstItem="pZT-zt-K0g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="4cZ-rO-ZMo"/>
                 <constraint firstAttribute="trailing" secondItem="Qge-3r-REx" secondAttribute="trailing" id="CfB-U8-XU4"/>
                 <constraint firstItem="pZT-zt-K0g" firstAttribute="top" secondItem="uWJ-IM-DLi" secondAttribute="bottom" constant="2" id="Fpx-Je-qOE"/>
                 <constraint firstItem="Qge-3r-REx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RFJ-zP-yDP"/>
                 <constraint firstItem="uZm-pj-Wfn" firstAttribute="top" secondItem="pZT-zt-K0g" secondAttribute="bottom" constant="5" id="VdE-1s-HCm"/>
                 <constraint firstItem="Qge-3r-REx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bWP-qG-Tfk"/>
                 <constraint firstItem="uZm-pj-Wfn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="gA7-0J-xRT"/>
-                <constraint firstItem="uWJ-IM-DLi" firstAttribute="top" secondItem="Qge-3r-REx" secondAttribute="bottom" constant="10" id="h67-bj-S5r"/>
-                <constraint firstAttribute="bottom" secondItem="Qge-3r-REx" secondAttribute="bottom" constant="90" id="hJB-8c-fty"/>
+                <constraint firstItem="uWJ-IM-DLi" firstAttribute="top" secondItem="Qge-3r-REx" secondAttribute="bottom" constant="8" id="h67-bj-S5r"/>
+                <constraint firstAttribute="bottom" secondItem="Qge-3r-REx" secondAttribute="bottom" constant="95" id="hJB-8c-fty"/>
                 <constraint firstItem="uWJ-IM-DLi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="rLb-he-yyc"/>
             </constraints>
             <size key="customSize" width="265" height="271"/>
@@ -60,7 +60,7 @@
                 <outlet property="hotelTitleLabel" destination="uWJ-IM-DLi" id="QHs-q3-7Yv"/>
                 <outlet property="priceDiscountLabel" destination="pZT-zt-K0g" id="xW2-W2-Ik6"/>
             </connections>
-            <point key="canvasLocation" x="300" y="-326"/>
+            <point key="canvasLocation" x="406" y="-465"/>
         </collectionViewCell>
     </objects>
     <resources>

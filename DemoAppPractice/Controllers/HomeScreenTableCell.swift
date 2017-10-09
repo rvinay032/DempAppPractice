@@ -9,11 +9,15 @@
 import UIKit
 
 class HomeScreenTableCell: UITableViewCell {
-
     
-   var homeScreenObj = HomeScreen()
-  
+    // MARK:- Object of HomeScreen model Class............
+    
+    var homeScreenObj = HomeScreen()
+    
+    // MARK:- Outlets............
+    
     @IBOutlet weak var dropButtonOut: UIButton!
+    
     @IBOutlet weak var collectionViewHomeScreen: UICollectionView!
     
     @IBOutlet weak var leftView: UIView!
@@ -25,49 +29,54 @@ class HomeScreenTableCell: UITableViewCell {
         
         let nib = UINib(nibName: "HomeScreenCollectionViewCell", bundle: nil)
         collectionViewHomeScreen.register(nib, forCellWithReuseIdentifier: "HomeScreenCollectionViewCellId")
-      
+        
         collectionViewHomeScreen.delegate = self
         collectionViewHomeScreen.dataSource = self
         
         shadowOfViews()
-       
+        
     }
     
+    // MARK:- Hide side Menu............
     
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        NotificationCenter.default.post(name: NSNotification.Name("toggleSideMenuHide"), object: nil, userInfo: nil)
     }
-    
 }
 
+// MARK:- HomeScreen Extension............
+
 extension HomeScreenTableCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return homeScreenObj.serviceNameArr.count
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
+        
         guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeScreenCollectionViewCellId", for: indexPath) as? HomeScreenCollectionViewCell else {fatalError("unable to make collection Cell")
         }
-       
+        
         cell.serviceImageLabel.text = homeScreenObj.serviceNameArr[indexPath.row]
         cell.serviceImageView.image = UIImage(named: homeScreenObj.serviceImagesArr[indexPath.row])
         
         return cell
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
         return CGSize(width: CGFloat((collectionView.frame.size.width / 4) - 10), height: CGFloat(120))
+        
     }
-
+    
 }
+
+// MARK:- Extension for shadow of View............
 
 extension HomeScreenTableCell {
     
     func shadowOfViews() {
+        
         leftView.layer.borderWidth = 2.0
         leftView.layer.borderColor = UIColor.clear.cgColor
         leftView.layer.masksToBounds = true;
@@ -89,7 +98,5 @@ extension HomeScreenTableCell {
         rightView.layer.masksToBounds = false;
         
     }
-    
-    
     
 }

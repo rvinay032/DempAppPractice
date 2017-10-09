@@ -11,6 +11,7 @@
 		0C1173381F88DA1300FB89FE /* TrendingcityCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1173361F88DA1300FB89FE /* TrendingcityCollectionCell.xib */; };
 		0C1548991F88B15D00522BD6 /* CorporateServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1548981F88B15D00522BD6 /* CorporateServices.swift */; };
 		0C15489B1F88B2DE00522BD6 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C15489A1F88B2DE00522BD6 /* HomeScreen.swift */; };
+		0C2386FF1F8B362800AA2AF3 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2386FE1F8B362800AA2AF3 /* ContainerVC.swift */; };
 		0CAA1DA31F87622100922BC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA1DA21F87622100922BC2 /* AppDelegate.swift */; };
 		0CAA1DA51F87622100922BC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAA1DA41F87622100922BC2 /* ViewController.swift */; };
 		0CAA1DA81F87622100922BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CAA1DA61F87622100922BC2 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		0C1173361F88DA1300FB89FE /* TrendingcityCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingcityCollectionCell.xib; sourceTree = "<group>"; };
 		0C1548981F88B15D00522BD6 /* CorporateServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorporateServices.swift; sourceTree = "<group>"; };
 		0C15489A1F88B2DE00522BD6 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		0C2386FE1F8B362800AA2AF3 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		0CAA1D9F1F87622100922BC2 /* DemoAppPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAppPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CAA1DA21F87622100922BC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CAA1DA41F87622100922BC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,8 +98,8 @@
 				0C1548981F88B15D00522BD6 /* CorporateServices.swift */,
 				0C15489A1F88B2DE00522BD6 /* HomeScreen.swift */,
 				0CF84B561F88E7ED002F6DE6 /* TrendingCityTour.swift */,
-				0CF84B581F88F001002F6DE6 /* TopRatedRestaurant.swift */,
 				0CF84B5C1F890FD9002F6DE6 /* TopInsuranceSeller.swift */,
+				0CF84B581F88F001002F6DE6 /* TopRatedRestaurant.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -139,13 +141,14 @@
 				0CAA1DA61F87622100922BC2 /* Main.storyboard */,
 				0CAA1DB91F87647000922BC2 /* HeaderOfHomeScreen.xib */,
 				0CAA1DBE1F87658D00922BC2 /* HomeScreenTableCell.xib */,
-				0C1173361F88DA1300FB89FE /* TrendingcityCollectionCell.xib */,
 				0CAA1DE01F87BD9C00922BC2 /* HomeScreenCollectionViewCell.xib */,
 				0CAA1DC31F8786E300922BC2 /* CorporateServicesCell.xib */,
 				0CAA1DC71F87870500922BC2 /* TrendingCityCell.xib */,
+				0C1173361F88DA1300FB89FE /* TrendingcityCollectionCell.xib */,
 				0CAA1DCB1F87872100922BC2 /* TopRatedRestaurantCell.xib */,
 				0CAA1DCF1F878CB400922BC2 /* TopNearByEventsCell.xib */,
 				0CAA1DD31F878CCB00922BC2 /* TopInsuranceSellerCell.xib */,
+				0CF84B5F1F891073002F6DE6 /* InsuranceCollectionCell.xib */,
 				0CAA1DAE1F87622100922BC2 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -155,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				0CAA1DA41F87622100922BC2 /* ViewController.swift */,
+				0C2386FE1F8B362800AA2AF3 /* ContainerVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -162,17 +166,16 @@
 		0CAA1DC11F8765A000922BC2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0CF84B5E1F891073002F6DE6 /* InsuranceCollectionCell.swift */,
-				0CF84B5F1F891073002F6DE6 /* InsuranceCollectionCell.xib */,
-				0CAA1DBD1F87658D00922BC2 /* HomeScreenTableCell.swift */,
 				0CAA1DB71F87644D00922BC2 /* HeaderOfHomeScreen.swift */,
+				0CAA1DBD1F87658D00922BC2 /* HomeScreenTableCell.swift */,
+				0CAA1DDF1F87BD9C00922BC2 /* HomeScreenCollectionViewCell.swift */,
 				0CAA1DC21F8786E300922BC2 /* CorporateServicesCell.swift */,
 				0CAA1DC61F87870500922BC2 /* TrendingCityCell.swift */,
+				0C1173351F88DA1300FB89FE /* TrendingcityCollectionCell.swift */,
 				0CAA1DCA1F87872100922BC2 /* TopRatedRestaurantCell.swift */,
 				0CAA1DCE1F878CB400922BC2 /* TopNearByEventsCell.swift */,
 				0CAA1DD21F878CCB00922BC2 /* TopInsuranceSellerCell.swift */,
-				0CAA1DDF1F87BD9C00922BC2 /* HomeScreenCollectionViewCell.swift */,
-				0C1173351F88DA1300FB89FE /* TrendingcityCollectionCell.swift */,
+				0CF84B5E1F891073002F6DE6 /* InsuranceCollectionCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				0CAA1DC81F87870500922BC2 /* TrendingCityCell.swift in Sources */,
 				0C15489B1F88B2DE00522BD6 /* HomeScreen.swift in Sources */,
 				0CAA1DC41F8786E300922BC2 /* CorporateServicesCell.swift in Sources */,
+				0C2386FF1F8B362800AA2AF3 /* ContainerVC.swift in Sources */,
 				0C1548991F88B15D00522BD6 /* CorporateServices.swift in Sources */,
 				0CF84B5B1F890260002F6DE6 /* TopNearbyEvents.swift in Sources */,
 				0CAA1DD41F878CCB00922BC2 /* TopInsuranceSellerCell.swift in Sources */,
